@@ -1,16 +1,14 @@
-#!/usr/bin/env python3
-# Name: Ryan Wanless (rwanless)
-# Group Members: Boxuan Ma, Jesse Smith, Shreya Sinha
+
 '''
-Program docstring goes here.
+program to “parse” sequence name information from a single line of a FASTQ formatted file
 '''
 
 
 class FastqString(str):
-    ''' Class docstring goes here.'''
+    ''' Parses fast1 files'''
 
     def parse(self):
-        ''' Method docstring goes here.'''
+        ''' parses the input data'''
         #gets input
         Input = input('please print input here: ')
         #gets rid of the @ symbol
