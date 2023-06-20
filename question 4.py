@@ -1,9 +1,7 @@
-#!/usr/bin/env python3
-# Name: Ryan Wanless (rwanless)
-# Group Members: Boxuan Ma, Jesse Smith, Shreya Sinha
+
 
 '''
-Program docstring goes here
+uses mappings to convert sequence information between different amino acid representations.
 '''
 short_AA = {
             'CYS': 'C', 'ASP': 'D', 'SER': 'S', 'GLN': 'Q', 'LYS': 'K',
