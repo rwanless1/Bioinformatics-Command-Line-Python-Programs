@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
-# Name: Ryan Wanless (rwanless)
-# Group Members: Boxuan Ma, Jesse Smith, Shreya Sinha
 
 
+'''
+“clean up” a sequence of DNA by removing ambiguous bases (denoted by “N”) output from a sequencer.
+'''
 class DNAstring(str):
     def length(self):
         return (length(self))
@@ -23,7 +23,7 @@ class DNAstring(str):
 
 
 def main():
-    ''' Get user DNA data and clean it up.'''
+    # Get user DNA data and clean it up.
     while (True):
         data = input('DNA data?')
         thisDNA = DNAstring(data)
