@@ -41,15 +41,17 @@ class ProteinParam:
         for aa in protein.upper():
             if aa in self.aaComp:  # count valid AA
                 self.aaComp[aa] += 1
-    'counts amino acid values'
+                
+    
     def aaCount(self):
+        '''counts amino acid values'''
         self.aaCountV = sum (self.aaComp.values()) #counts values from aaComp table and saves them to variable
         return self.aaCountV
- # sum aa.
 
-    # ceates dictionary named pI and goes in range of 1 to 1401, then divides by 100 and gets absolute value
-    # then finds minimum of key value
+    
     def pI(self):
+        ''' ceates dictionary named pI and goes in range of 1 to 1401, then divides by 100 and gets absolute value
+     then finds minimum of key value'''
         pI = {}
         for ph in range(0, 1401):
             ph = ph/100
@@ -58,9 +60,10 @@ class ProteinParam:
         #print(min(pI, key=pI.get))
         return min(pI, key=pI.get)
 
-    # takes the values of aaComp dictionary and divides them by total number of amino acids in table
+    
 
     def aaComposition(self,):
+          ''' takes the values of aaComp dictionary and divides them by total number of amino acids in table '''
         if self.aaCountV > 0:
             for key in self.aaComp.keys():
                 percentage = (self.aaComp[key] / self.aaCount()*100) # then multiplies by 100 to get the percent and 0.2f for two decimal places
@@ -71,9 +74,10 @@ class ProteinParam:
                 print(key, '=','%.2f' % percentage,'%' )
 
 
-    # this is an imput of the math equation for total charge of an amino acid
-    # subtracts positive by negative to get toal charge
+   
     def _charge_(self, pH):
+        ''' this is an imput of the math equation for total charge of an amino acid
+     subtracts positive by negative to get toal charge '''
         positiveCharge = 0
         negativeCharge = 0
         for aa in self.aa2chargePos: # this is positive charge
@@ -88,9 +92,10 @@ class ProteinParam:
 
 
         return positiveCharge - negativeCharge
+        
 
     def molarExtinction(self):
-        # multipies values of aa comp dictionary and aa2abs280 value with corresponsind amino acid
+    '''multipies values of aa comp dictionary and aa2abs280 value with corresponsind amino acid'''    
         aa2abs280 = {'Y': 1490, 'W': 5500, 'C': 125}
         yvalue = self.aaComp['Y'] * self.aa2abs280['Y']
         wValue = self.aaComp['W'] * self.aa2abs280['W']
@@ -104,7 +109,7 @@ class ProteinParam:
         return self.molarExtinction() / myMW if myMW else 0.0
 
     def molecularWeight(self):
-        # add up molecular weigth of all amino acids times the number of them
+         add up molecular weigth of all amino acids times the number of them
 
         mwH20 = 18.015
         molecularweight = mwH20
