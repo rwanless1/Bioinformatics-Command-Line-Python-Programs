@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Name: Ryan Wanless (rwanless)
+# Group Members: Boxuan Ma(bma79), Jesse Smith(jefsmith), Shreya Sinha(ssinha10)
 import sys
 
 
@@ -187,7 +190,7 @@ def main(inFile=None, options=None):
         #this line sorts the geneCanates list to the input that was required
         sortedGeneCandates = orf.geneCanad()
         sortedGeneCandates.sort(key=lambda x:(-x[3], x[1]))
-        #sorts the gene canadits list based on the predetermined output 
+        #sorts the gene canadits list based on the predetermined output
         for canidate in sortedGeneCandates:
             print('{:+d} {:>5d}..{:>5d} {:>d}'.format(canidate[0], canidate[1], canidate[2], canidate[3]))
 
@@ -199,4 +202,6 @@ def main(inFile=None, options=None):
 
 
 if __name__ == "__main__":
-    main()  # delete this stuff if running from commandline
+    main('testfa.fa')  # delete this stuff if running from commandline
+
+
