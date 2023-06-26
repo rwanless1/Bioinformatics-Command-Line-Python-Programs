@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# Name: Ryan Wanless (rwanless)
+# Group Members: Boxuan Ma(bma79), Jesse Smith(jefsmith), Shreya Sinha(ssinha10)
+
 import sys
 
 
@@ -131,3 +135,10 @@ def main(inFile = 'bos-tRNA.fa'):
         output.sort(key=len)
         for item in output:
             print(item)
+
+
+
+
+
+if __name__ == "__main__":
+  main('bos-tRNA.fa')
