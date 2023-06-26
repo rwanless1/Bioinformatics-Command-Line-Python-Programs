@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-# Name: Ryan Wanless (rwanless)
-# Group Members: Boxuan Ma(bma79), Jesse Smith(jefsmith), Shreya Sinha(ssinha10)
+
 
 import sys
 
