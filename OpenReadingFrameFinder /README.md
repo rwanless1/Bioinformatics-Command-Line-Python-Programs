@@ -3,7 +3,9 @@ This program analyizes open reading frame of DNA sequences based on Start Codon 
 This program also makes the assumption that if there is a stop codon and no start codon from the left then it will use the left end of the genome as the start point
 
 Requires FASTA File 
+
 A file has been provided in the folder called 'testfa.fa'
+
 The program has this as the input, to change to standard in please change main
 
 example output: 
