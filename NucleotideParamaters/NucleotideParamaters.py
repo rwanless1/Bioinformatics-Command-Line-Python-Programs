@@ -182,4 +182,4 @@ def main(fileName=None):
         print('{:s} : {:s} {:5.1f} ({:6d})'.format(codon[0], myNuc.rnaCodonTable[codon[0]], (codon[1] / sum (myNuc.codonComp.values())) * 100, codon[1]))
 
 if __name__ == "__main__":
-     main()  # make sure to change this in order to use stdin
+     main('testGenome.fa')  # make sure to change this in order to use stdin
