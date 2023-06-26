@@ -5,8 +5,6 @@ class Triad:
     """
     Calculate angles and distances among a triad of points.
 
-    Author: David Bernick
-    Date: March 21, 2013
     Points can be supplied in any dimensional space as long as they are consistent.
     Points are supplied as tupels in n-dimensions, and there should be three
     of those to make the triad. Each point is positionally named as p,q,r
