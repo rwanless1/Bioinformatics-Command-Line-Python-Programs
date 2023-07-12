@@ -1,4 +1,4 @@
-This python program takes the FASTQ information from a DNA sequences and parses the Data to make it readable to the user
+This python program takes the FASTQ information from a DNA sequencer and parses the Data to make it readable to the user
 
 Example: 
 
